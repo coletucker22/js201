@@ -49,32 +49,11 @@ function isVowel (vowel) {
 // isOdd(3.14) --> false
 
 function isEven (num) {
-    if (num %2 === 0) {
-        return true
-    } else {
-        return false
-    }
-    if (typeof num === Number) {
-        return true
-    } else {
-        return false
-    }
-    
+    return typeof num === 'number' && num % 2 === 0
 }
-
 function isOdd (num) {
-    if (num %2 !== 0) {
-        return true
-    } else {
-        return false
-    } 
-    if (typeof num === Number) {
-        return true 
-    } else {
-        return false
-    }
+    return typeof num === 'number' && num % 2 !==0 && num % 1 === 0
 }
-
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
