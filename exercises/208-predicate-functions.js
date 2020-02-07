@@ -20,6 +20,17 @@
 // isVowel('A') --> true
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
+function isVowel (vowel) {
+    const vowelsArray = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for (let index=0; index < vowelsArray.length; index++) {
+        if (vowelsArray[index] === vowel) {
+            return true
+        }
+      }
+    return false
+    }
+
+    
 
 
 
@@ -37,6 +48,32 @@
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 
+function isEven (num) {
+    if (num %2 === 0) {
+        return true
+    } else {
+        return false
+    }
+    if (typeof num === Number) {
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+function isOdd (num) {
+    if (num %2 !== 0) {
+        return true
+    } else {
+        return false
+    } 
+    if (typeof num === Number) {
+        return true 
+    } else {
+        return false
+    }
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,3 +90,6 @@
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+function isCapitalCity (state, city) {
+
+}
