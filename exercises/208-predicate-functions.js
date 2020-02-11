@@ -1,3 +1,6 @@
+
+
+
 // TIP:
 // A predicate function is a function that returns boolean true or false
 // They are useful for improving the semantics of checking for conditions.
@@ -69,6 +72,47 @@ function isOdd (num) {
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
-function isCapitalCity (state, city) {
+
+var stateCapitals = {
+    "Texas": 'Austin',
+    'Alaska': 'Juneau',
+    'Illinois': 'Springfield'
+    // .....
+}
+
+function isCapitalCity (state, capital) {
+
+    return stateCapitals[state] === capital
+
+
+    if (stateCapitals[state] === capital) {
+        return true
+    } else {
+        return false
+    }
+
+   if (states.Texas.name === state && states.Texas.capital === capital) {
+       return true
+   }
+   if (states.Alaska.name === state && states.Alaska.capital === capital) {
+       return true
+   } else {
+       return false
+   }
+}    
+   
+var states = {
+    "Texas": {
+        "name": "Texas",
+        "capital": "Austin",
+        "lat": "30.266667",
+        "long": "-97.75"
+      },
+      "Alaska": {
+        "name": "Alaska",
+        "capital": "Juneau",
+        "lat": "58.301935",
+        "long": "-134.419740"
+      },
 
 }
